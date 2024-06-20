@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    background-image: url(./images/bg.jpg);
+    font-size: 19px; /*預設body字型尺寸*/
+}
+img{
+    display: block;
+}
+
+/*Class*/
+.box{
+    width: 1000px;
+    margin: 0 auto; /* 間距置中(auto) => 間距自動偵測必須搭配寬度(width) */
+}
+
+.btn{
+    /* width: 200px; */
+    float: left;    /* 用浮動區塊(float)，自動抓取內容尺寸覆蓋原來的區塊(block) */
+}
+
+.col{
+    width: 500px;
+    float: left;
+}
+
+h1{
+    font-size: 2rem; /*跟隨瀏覽器變大*/
+}
+h2{
+    font-size: 150%; /*相等font-size:1.5em*/
+}
+p{
+    font-size: 1em; /*<p>預設就是1em*/
+}
