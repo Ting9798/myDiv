@@ -1,34 +1,71 @@
 body {
     margin: 0;
     background-image: url(./images/bg.jpg);
-    font-size: 19px; /*預設body字型尺寸*/
+    font-size: 16px;
+    /*預設body字型尺寸 (通常不設定，預設16px)*/
 }
-img{
+
+img {
     display: block;
 }
 
-/*Class*/
-.box{
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+/*Class 設定樣式用*/
+.box {
     width: 1000px;
-    margin: 0 auto; /* 間距置中(auto) => 間距自動偵測必須搭配寬度(width) */
+    margin: 0 auto;
+    /* 間距置中(auto) => 間距自動偵測必須搭配寬度(width) */
 }
 
-.btn{
+.btn {
     /* width: 200px; */
-    float: left;    /* 用浮動區塊(float)，自動抓取內容尺寸覆蓋原來的區塊(block) */
-}
-
-.col{
-    width: 500px;
     float: left;
+    /* 用浮動區塊(float)，自動抓取內容尺寸覆蓋原來的區塊(block) */
 }
 
-h1{
-    font-size: 2rem; /*跟隨瀏覽器變大*/
+.col {
+    width: 468px;
+    /* 文字會自動延展，需要給尺寸 */
+    float: left;
+    border: dotted 3px #799351;
+    margin: 10px;
+    padding: 3px;
 }
-h2{
-    font-size: 150%; /*相等font-size:1.5em*/
+
+.footer {
+    clear: both;
+    width: 1000px;
+    margin: 10px auto;
+    text-align: center;/* 行內文字置中 */
+    border-top: dotted 3px #799351;
+    padding: 15px;
 }
-p{
-    font-size: 1em; /*<p>預設就是1em*/
+/* <span>主要用來修改樣式 */
+.col span{
+    color: #973131;
+}
+.col hr{
+    border:#424b425d 1px solid ;
+}
+
+h1 {
+    font-size: 1.6rem;
+    /*跟隨瀏覽器變大*/
+}
+
+h2 {
+    font-size: 150%;
+    /*相等font-size:1.5em*/
+}
+
+p {
+    font-size: 1em;
+    /*<p>預設就是1em*/
+}
+
+address{
+    font-style: normal;
 }
